@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5952125c-cb16-4ea8-aed3-09a572477d30" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/locators/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/locators/main_page_locators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/locators/order_page_locators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/locators/yandex_locators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/order_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/yandex_logo_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_main_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_order_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_yandex_logo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
