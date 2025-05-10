@@ -1,21 +1,21 @@
-from selenium.webdriver.support import expected_conditions
-from locators.yandex_locators import YandexLocators
+import pytest
+import allure
 from pages.main_page import MainPage
 from pages.yandex_logo_page import YandexLogoPage
-from data import Urls
-import allure
 
 
 class TestYandexLogo:
-    @allure.title('При клике на логотип яндекса попадаем на яндекс дзен')
-    def test_yandex_modal_appears_after_redirect(self, driver):
+    @allure.title('Проверка кнопки "Да" в модальном окне Дзена')
+    def test_dzen_modal_yes_button(self, driver):
         main_page = MainPage(driver)
         yandex_page = YandexLogoPage(driver)
-        main_page.go_to_url(Urls.MAIN_PAGE)
+
+        allure.step("Открыть главную страницу")
+        main_page.go_to_main_page()
         main_page.accept_cookies()
-        yandex_page.click_yandex_logo()
-        driver.switch_to.window(driver.window_handles[1])
-        modal = yandex_page.wait.until(
-            expected_conditions.visibility_of_element_located(YandexLocators.YANDEX_MODAL))
-        assert modal.is_displayed(), "Модальное окно не отображается"
-        assert "Установить Яндекс Браузер?" in modal.text, "Неверный текст в модалке"
+
+        allure.step("Кликнуть на логотип Яндекса")
+        main_page.click_yandex_logo()
+
+        allure.step("Проверить кнопку 'Да' в модальном окне")
+        assert yandex_page.check_dzen_modal_yes_button()

@@ -22,9 +22,9 @@ class TestMainPage:
     )
     @allure.title('Проверить, что в блоке с вопросами появляется соответствующий текст')
     def test_questions_and_answers(self, driver, number, expected_answer):
-
         main_page = MainPage(driver)
+        main_page.go_to_main_page()
         main_page.accept_cookies()
-        main_page.scroll_to_questions_section()
-        main_page.click_question(number)
+        main_page.scroll_to_questions()
+        main_page.open_question(number)
         assert main_page.get_answer_text(number) == expected_answer
